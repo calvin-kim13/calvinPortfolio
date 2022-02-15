@@ -6,31 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <title>CK | Full Stack Developer</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#">Calvin Kim</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Work</a>
-            <a class="nav-link" href="#">Contact</a>
-            </div>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>devcalvin</h1>
         </div>
-    </nav>
-    
-   
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>    
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INTRODUCTION -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Calvin Kim</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">full stack dev</p>
+        <img src="./assets/img/home-img.jpg" alt="picture of calvin" class="intro__img">
+    </section>
+
+    <!-- SERVICES -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, dignissimos saepe neque, id, velit aut incidunt nihil non cumque quibusdam tenetur facilis eum quam atque harum vitae tempora consequuntur aliquam.</p>
+            </div>
+            <!-- END OF SERVICE 1 -->
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita dolor ad minima aperiam numquam consequuntur doloremque eum quam quidem! Amet dolorem ex eveniet alias eaque vitae suscipit, hic vel!</p>
+            </div>
+            <!-- END OF SERVICE 2 -->
+            <div class="service">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laudantium natus minima esse possimus architecto aut recusandae quidem doloremque, placeat officiis saepe. Et modi reiciendis, ut cumque provident maiores alias.</p>
+            </div>
+            <!-- END OF SERVICE 3 -->
+        </div>
+        <!-- LINK TO MY WORK PAGE -->
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            Full-Stack Web Developer based in Brea, CA
+        </p>
+
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ad debitis autem libero esse. Repudiandae nobis, dicta cupiditate id aperiam amet recusandae ipsum voluptas nisi tempore, inventore quidem, numquam sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illum laborum neque necessitatibus eveniet mollitia sunt omnis, accusantium amet suscipit obcaecati voluptate quaerat ipsum illo quidem aut cupiditate. Labore, obcaecati.</p>
+        </div>
+
+        <img src="./assets/img/home-img.jpg" alt="a picture of calvin" class="about-me__img">
+    </section>
+
+    <!-- MY WORK -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <!-- PORTFOLIO ITEM 1 -->
+            <a href="#" class="portfolio__items">
+                <img src="./assets/img/home-img.jpg" alt="" class="portfolio__img">
+            </a>
+            <!-- PORTFOLIO ITEM 2 -->
+            <a href="#" class="portfolio__items">
+                <img src="./assets/img/home-img.jpg" alt="" class="portfolio__img">
+            </a>
+            <!-- PORTFOLIO ITEM 3 -->
+            <a href="#" class="portfolio__items">
+                <img src="./assets/img/home-img.jpg" alt="" class="portfolio__img">
+            </a>
+            <!-- PORTFOLIO ITEM 4 -->
+            <a href="#" class="portfolio__items">
+                <img src="./assets/img/home-img.jpg" alt="" class="portfolio__img">
+            </a>
+            <!-- PORTFOLIO ITEM 5 -->
+            <a href="#" class="portfolio__items">
+                <img src="./assets/img/home-img.jpg" alt="" class="portfolio__img">
+            </a>
+            <!-- PORTFOLIO ITEM 6 -->
+            <a href="#" class="portfolio__items">
+                <img src="./assets/img/home-img.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="mailto:calvinkim1230@gmail.com" class="footer__link">calvinkim1230@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"></a>a</li>
+            <li class="social-list__item"><a class="social-list__link" href="#"></a>b</li>
+            <li class="social-list__item"><a class="social-list__link" href="#"></a>c</li>
+            <li class="social-list__item"><a class="social-list__link" href="#"></a>d</li> 
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
