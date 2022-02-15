@@ -430,11 +430,10 @@ footer a {
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.5);
+    color: var(--ligt-color);
 }
 
 .social-list {
@@ -445,10 +444,7 @@ footer a {
     padding: 0;
 }
 
-.social-list__item {
-    margin: 0 .5em;
-}
-
 .social-list__link {
+    margin: 0 1.5em;
     padding: .5em;
 }
