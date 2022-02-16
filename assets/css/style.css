@@ -7,15 +7,16 @@
 
 /* VARIABLES */
 :root {
-    --ff-primary: ;
-    --ff-secondary: ;
+    --ff-primary: 'Noto Serif Display', serif;
+    --ff-secondary: 'Saira Condensed', sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --ligt-color: #fff;
+    --ligt-color: #373E98;
     --dark-color: #303030;
-    --accent-color: #16e0bd;
+    --main-font-color: white;
+    --accent-color: #CEB92C;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -41,7 +42,7 @@ html {
 
 body {
     background: var(--ligt-color);
-    color: var(--dark-color);
+    color: var(--main-font-color);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -71,7 +72,7 @@ strong {
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--accent-color);
-    color: var(--dark-color);
+    color: var(--main-font-color);
     text-decoration: none;
     cursor: pointer;
     font-size: .8em;
@@ -83,6 +84,7 @@ strong {
 
 .btn:hover {
     transform: scale(1.1);
+    color: var(--main-font-color);
 }
 
 /* TYPOGRAPHY */
@@ -91,6 +93,7 @@ h2,
 h3 {
     line-height: 1;
     margin: 0;
+    color: var(--main-font-color);
 }
 
 h1 {
@@ -103,6 +106,7 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+    color: var(--accent-color);
 }
 
 .section__title {
@@ -144,7 +148,6 @@ header {
 .nav {
     position: fixed;
     background: var(--dark-color);
-    color: var(--ligt-color);
     top: 0;
     bottom: 0;
     left: 0;
@@ -166,14 +169,14 @@ header {
 }
 
 .nav__link {
-    color: inherit;
+    color: var(--main-font-color);
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
 }
 
 .nav__link:hover {
-    color: var(--accent-color);
+    color: var(--accent-color)
 }
 
 .nav-toggle {
@@ -292,7 +295,7 @@ header {
 }
 
 .section__title--services {
-    color: var(--accent-color);
+    color: var(--main-font-color);
     position: relative;
 }
 
@@ -302,8 +305,8 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--ligt-color);
-    opacity: 0.25;
+    background: var(--accent-color);
+    opacity: 0.9;
 }
 
 .services {
@@ -313,6 +316,7 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
+    color: var(--main-font-color);
 }
 
 @media (min-width: 800px) {
@@ -372,7 +376,7 @@ header {
 
 /* PORTFOLIO / WORK SECTION */
 .my-work {
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     color: var(--ligt-color);
     text-align: center;
 }
@@ -412,8 +416,8 @@ header {
 
 /* FOOTER */
 footer {
-    background: #111;
-    color: var(--accent-color);
+    background: var(--dark-color);
+    color: var(--main-font-color);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -426,14 +430,24 @@ footer a {
 
 .footer__link {
     font-weight: var(--fw-bold);
+    font-size: 2.3rem;
 }
 
-.footer__link:hover,
+.footer__link::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 3px;
+    margin: 0.5em auto 1em;
+    background: var(--accent-color);
+    opacity: 0.9;
+}
+
 .social-list__link:hover {
     cursor: pointer;
     transition: transform 150ms;
     transform: scale(1.5);
-    color: var(--ligt-color);
+    color: var(--accent-color);
 }
 
 .social-list {
@@ -447,4 +461,5 @@ footer a {
 .social-list__link {
     margin: 0 1.5em;
     padding: .5em;
+    font-size: 2.5rem;
 }
