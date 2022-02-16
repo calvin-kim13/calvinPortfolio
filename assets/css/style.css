@@ -7,8 +7,7 @@
 
 /* VARIABLES */
 :root {
-    --ff-primary: 'Noto Serif Display', serif;
-    --ff-secondary: 'Saira Condensed', sans-serif;
+    --ff-primary: 'Saira Condensed';
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -97,7 +96,7 @@ h3 {
 }
 
 h1 {
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
 }
 
 h2 {
@@ -130,7 +129,7 @@ h3 {
 .section__subtitle--about {
     background: var(--accent-color);
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     margin-bottom: 1em;
 }
 
@@ -287,9 +286,9 @@ header {
 /* SERVICES SECTION */
 .my-services {
     background-color: var(--dark-color);
-    background-image: url(../img/home-img.jpg);
+    background-image: url(../img/service-img.jpeg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: multiply;
     color: var(--ligt-color);
     text-align: center;
 }
@@ -338,6 +337,13 @@ header {
     margin: 0 auto;
 }
 
+.about-me__body {
+    background-color: white;
+    color: var(--dark-color);
+    padding: 1rem;
+    height: 20rem;
+}
+
 .about-me__img {
     box-shadow: var(--bs);
 }
@@ -377,7 +383,7 @@ header {
 /* PORTFOLIO / WORK SECTION */
 .my-work {
     background-color: var(--light-color);
-    color: var(--ligt-color);
+    color: var(--light-color);
     text-align: center;
 }
 
